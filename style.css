@@ -60,13 +60,16 @@ html{
     color: black;
     
 }
-.pagina1{
+
+
+.pagina1 {
     width: 100vw;
     height: 100vh;
     background-image: linear-gradient(rgba(14, 12, 12, 0.8), rgba(37, 37, 37, 0.8)) ,url(imagens/yakssoba.jpg);
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
+    background-position-y: 50px ;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -80,7 +83,7 @@ html{
 }
 .pagina1 h1{
     color: rgb(226, 34, 34);
-    font-size: 3rem;
+    font-size: 4rem;
     font-weight: 400;
     text-transform: uppercase;
     margin-bottom: 1rem;
@@ -251,8 +254,144 @@ footer{
     background-color: rgb(99, 91, 91);
     color: aliceblue;
     font-size: 1.5rem;
-  align-items: center;
+    align-items: center;
     font-weight: bolder;
     justify-content: center;
     
    }
+
+@media(max-width:1200px) {
+    .main {
+        display: block;
+    }
+    .pagina2 img{
+        width: 600px;
+        margin-left: -2px;
+    }
+}
+@media (max-width:980px) {
+    html {
+        font-size: 50%;
+    }
+}
+@media (max-width: 870px) {
+    .conteudo {
+       justify-content: space-between;
+       padding: 0px 40px;
+    }
+    .conteudo list-menu {
+        display: none;
+    }
+    .um,
+    .dois,
+    .tres {
+        width: 100%;
+        height: 4px;
+        background-color: rgb(241, 235,235);
+        margin: 6px auto;
+        transition-duration: 0.5s;
+    }
+    .toggle {
+        width: 40px;
+        height: 30px;
+    }
+    .conteudo.on {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 40vh;
+        background-color: rgb(42, 41, 43);
+        z-index: 10;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .conteudo.on .logo {
+        display: none;
+    }
+    .conteudo.on .toggle {
+        position: absolute;
+        right: 40px;
+        top: 20px;
+    }
+    .conteudo.on .list-menu {
+        display: block;
+    }
+    .conteudo.on .list-menu li {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+    }
+    .conteudo.on .list-menu li a {
+        font-size: 4rem;
+        display: block;
+    }
+    .conteudo.on .toggle .um{
+        transform: rotate(45deg) translate(8px, -7px);
+    }
+    .conteudo.on .toggle .dois {
+        opacity: 0;
+    }
+    .conteudo.on .toggle .tres{
+        transform: rotate(-45deg) translate(20px, -6px);
+    }
+    .cont-contato {
+        display: block;
+        text-align: center;
+        font-size: 2rem;
+    }
+    .cont-contato div {
+        margin: 2rem;
+    }
+}
+@media (max-width:720px) {
+    .pagina1 h1{
+        width: 350px;
+        text-align: center;
+    }
+  
+}
+@media (max-width:645px) {
+    .pagina2 img{
+        width: 400px;
+        margin-left: 10px;
+    }
+    .text-sobre p{
+        text-align: center;
+        width: 400px;
+    }
+    .btn{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .cont-contato{
+        width: 400px;
+    }
+    .conteudo1 h2{
+        width: 200px;
+        text-align: center;   
+     }
+
+}
+
+
+@media (max-width:399px) {
+    .conteudo1 h1{
+        font-size: 3rem;
+    }
+    .conteudo1 h2{
+        font-size: 2rem;
+    }
+    .pagina2 img {
+        width: 300px;
+        height: auto;
+        margin-left: 10px;
+    }
+    .texto-sobre p{
+        text-align: center;
+        width: 200px;
+    }
+}

@@ -294,7 +294,6 @@ footer{
         transition-duration: 0.5s;
     }
     .toggle {
-        position: fixed;
         width: 40px;
         height: 30px;
     }

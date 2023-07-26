@@ -288,12 +288,13 @@ footer{
     .dois,
     .tres {
         width: 100%;
-        height: 4px;
+        height: 5px;
         background-color: rgb(241, 235,235);
         margin: 6px auto;
         transition-duration: 0.5s;
     }
     .toggle {
+        position: fixed;
         width: 40px;
         height: 30px;
     }

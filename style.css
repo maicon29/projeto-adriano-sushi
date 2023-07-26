@@ -26,10 +26,9 @@ html{
     align-items: center;
     background-color: rgb(34, 33, 33);
     position: fixed;
-    padding-left: 30rem;
 }
 .logo{
-    color: aliceblue;
+    color: red;
     width: 70px;
     height: auto;
     cursor: pointer;
@@ -49,7 +48,7 @@ html{
 .conteudo .list-menu li a{
     padding: 3rem 1rem 2rem 1rem;
     color: rgb(245, 12, 12);
-    font-size: 1.7rem;
+    font-size: 1.8rem;
     text-transform: uppercase;
     font-weight: 500;
     transition: all 200ms ease-in;
@@ -298,7 +297,6 @@ footer{
         height: 30px;
     }
     .conteudo.on {
-        position: fixed;
         top: 0;
         left: 0;
         width: 100vw;
@@ -376,10 +374,7 @@ footer{
         width: 200px;
         text-align: center;   
      }
-
 }
-
-
 @media (max-width:399px) {
     .conteudo1 h1{
         font-size: 3rem;

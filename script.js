@@ -1,4 +1,3 @@
-alert('Quase pronto')
 
 let show = true;
 

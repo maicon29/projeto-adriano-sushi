@@ -26,6 +26,7 @@ html{
     align-items: center;
     background-color: rgb(34, 33, 33);
     position: fixed;
+    
 }
 .logo{
     color: red;
@@ -85,7 +86,7 @@ html{
     font-size: 4rem;
     font-weight: 400;
     text-transform: uppercase;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
     font-family: 'Indie Flower', cursiva ;
 }
 .pagina1 h2{
@@ -278,7 +279,7 @@ footer{
 @media (max-width: 870px) {
     .conteudo {
        justify-content: space-between;
-       padding: 0px 0px;
+       padding: 0px 20px;
     }
     .conteudo .list-menu {
         display: none;
@@ -287,7 +288,7 @@ footer{
     .dois,
     .tres {
         width: 100%;
-        height: 6px;
+        height: 5px;
         background-color: rgb(241, 235,235);
         margin: 6px auto;
         transition-duration: 0.5s;
@@ -300,7 +301,7 @@ footer{
         top: 0;
         left: 0;
         width: 100vw;
-        height: 55vh;
+        height: 50vh;
         background-color: rgb(43, 42, 44);
         z-index: 10;
 
